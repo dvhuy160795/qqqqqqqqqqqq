@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="demo" default="file">
+	<loadfile property="version" file="demo.php" />
+	<dirname property="buildfile.dir" file="${phing.file}"/>
+
+    <resolvepath propertyName="phingpkg.home" path="${buildfile.dir}/.."/>
+
+    <property name="build.full.dir" value="${buildfile.dir}"/>
+
+        <property name="build" value="full/" override="true"/>
+
+	<target name="alo">
+		<echo msg="alo alo" />
+	</target>
+	<target name="hello" depends="alo">
+		<echo msg="Hello world" />
+	</target>
+	<target name="file">
+		<echo>${version}</echo>
+	</target>
+	<target name="copy-file">
+	<echo>${build.full.dir}</echo>
+	<copy file="test.txt" tofile="${build.full.dir}/full" overwrite="true"/>
+	</target>
+	<target name="delete-dir">
+		<delete dir="${build.full.dir}/f" includeemptydirs="true" verbose="true" failonerror="true" />
+	</target>
+	<target name="delete-file">
+		<delete file="${build.full.dir}/full/1.txt"/>
+	</target>
+	<target name="delete-file-use-fileset">
+		<delete>
+		<fileset dir="/full">
+			<include name="*.txt" />
+		</fileset>
+		</delete>
+	</target>
+</project>

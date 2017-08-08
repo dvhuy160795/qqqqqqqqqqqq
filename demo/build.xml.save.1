@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="demo" default="file">
+	<loadfile property="version" file="demo.php" />
+	<property name="pkgname-docs" value="phingdocs-${version}" override="true"/>
+        <property name="build.full.dir" value="${buildfile.dir}/full/${pkgname}" override="true"/>
+
+	<target name="alo">
+		<echo msg="alo alo" />
+	</target>
+	<target name="hello" depends="alo">
+		<echo msg="Hello world" />
+	</target>
+	<target name="file">
+		<echo>${version}</echo>
+	</target>
+	<target name"copy-file">
+		<mkdir dir="${build.full.d" />
+
+        <copy todir="${build.full.dir}">
+            <fileset refid="all"/>
+        </copy>
+
+        <copy file="${buildfile.dir}/manifest.xml" tofile="${build.full.dir}/ma$
+            <filterchain>
+                <expandproperties />
+            </filterchain>
+        </copy>
+
+        <chmod file="${build.full.dir}/bin/phing" mode="755"/>
+	</target>
+</project>

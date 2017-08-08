@@ -1,0 +1,1 @@
+echo gọi nội dugn file

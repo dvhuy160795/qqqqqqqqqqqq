@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+ <công_thức_nấu_ăn tên="bánh mì" thời_gian_chuẩn_bị="5 phút" thời_gian_nấu="3 tiếng">
+  <title>Bánh mì cơ bản</title>
+  <nguyên_liệu lượng="3" đơn_vị="ca">Bột mì</nguyên_liệu>
+  <nguyên_liệu lượng="7" đơn_vị="gram">Men</nguyên_liệu>
+  <nguyên_liệu lượng="1.5" đơn_vị="ca" trạng_thái="ấm">Nước</nguyên_liệu>
+  <nguyên_liệu lượng="1" đơn_vị="thìa cà phê">Muối</nguyên_liệu>
+  <chỉ_dẫn>
+  <bước>Trộn tất cả các nguyên liệu với nhau và nhào kĩ</bước>
+  <bước>Phủ một mảnh vải, ủ một tiếng đồng hồ trong phòng ấm.</bước>
+  <bước>Nhào lại, đổ vào khuôn, cho vào lò nướng.</bước>
+  </chỉ_dẫn>
+ </công_thức_nấu_ăn>
