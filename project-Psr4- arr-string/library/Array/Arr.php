@@ -1,7 +1,7 @@
 <?php 
 namespace AppArr;
 
-class Arr{
+class Mang{
     private $str;
     public function strToArr($str){
         return $array=explode(" ",$str);
